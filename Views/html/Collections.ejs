@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title> Expozitii online </title>
+    <link href="/site.css" rel="stylesheet" type="text/css">
+    <link href="/Collections.css" rel="stylesheet" type="text/css">
+   
+</head>
+<body>
+    <header>
+        
+    
+        <%- include("../fragmente/meniu+logo") %>
+        <div class="cadran">
+                <!-- <div class="logo"><img src="poza.png" alt=""></div> -->
+            
+                <div class="slide">
+                <a  onclick="clickCounter()"  href="#titlu1" ><img src="/gallery/art-gallery.jpg" alt="" id="firstClone"><h1 id="counter1">Ai accesat acest link de 0 ori.</h1></a>
+                <a  onclick="clickCounter2()" href="#titlu2"><img src="/gallery/Untitled12.png" alt=""><h2 id="counter2">Ai accesat acest link de 0 ori.</h2></a>
+
+               </div>
+           
+        </div>
+        <div class="sageti">
+            <button id="stanga" href="">&#10096;</button>
+            <button id="dreapta" href="">&#10097;</button>
+        </div>
+
+
+        <div class="extind">
+        
+        <div id="sageata"> <div><p>&#10148;</p> </div></div>
+            <h id="titlu1"><br><h id="N">Nature</h><br><br><br></h>
+
+            <select onchange="fontSize();" id='text'>
+                <option>x-small</option>
+                <option>xx-large</option>
+                <option>1cm</option>
+                <option>50px</option>
+                <option>3vw</option>
+              </select>
+
+            <ul id="prima">
+                <li><img id="unu" src="/gallery/pictura_zilei.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/tablou-toamna-glorioasa-la-aspen_7038029.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/54b588e4646c9bdefbccfb37cc787ff1.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/watercolour-painting-3958891_1280.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/images.jfif" alt=""></li>
+                <li><img id="unu" src="/gallery/51.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/magie-in-octombrie-79616.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/tablouri_de_primavara_anca_bulgaru_primavara_pe_lac_2.jpg" alt=""></li>
+                <li><img id="unu" src="/gallery/silent-autumn-graham-gercken.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+        <!-- <div id="sageata"> <div><p>&#10148;</p> </div></div> -->
+        <div class="extind2">
+            <h id="titlu2"><br><h id="R">Rogvaiv</h><br><br><br></h>
+            <div id="sageata"> <div><p>&#10148;</p> </div></div>
+            <ul id="prima">
+                <li><img id="trei" src="/gallery/Untitled7.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled12.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled2.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled3.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled8.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled9.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled5.png" alt=""></li>
+                <li><img id="trei" src="/gallery/Untitled1.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+
+
+    </header>
+    <script src="/collections.js"></script>
+    
+</body>
+<!-- <script src="site.js"></script> -->
+</html>

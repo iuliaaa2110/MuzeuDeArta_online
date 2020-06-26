@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title> Expozitii online </title>
+    <script src="/Connect.js"></script>
+    <link href="/site.css" rel="stylesheet" type="text/css">
+    <link href="/about.css" rel="stylesheet" type="text/css">
+    <link href="/News.css" rel="stylesheet" type="text/css">
+    <link href="/Connect.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header>
+        <!-- <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> -->
+    
+        <%- include("../fragmente/meniu+logo") %>
+            <script src="/Connect.js"></script>
+        <div class="rcorners2">
+            <div class="form">  
+
+                <form class="login-form" id="unu" method="post" >
+                    <p id="m1">Conectare</p>
+                    <input id="nume" type="username" placeholder="Nume de utilizator"/>
+                    <input id="parola" type="password" placeholder="Parola"/>
+                    <button type="submit" id="Login" href="/Connect">Login</button>
+                    <p class="m2">Nu ai cont la noi? <a id="GoToReg" >Inregistreaza-te</a>.</p>
+                </form>
+
+
+                <form class="register-form" id="doi" method="post" action="/Connect">
+                    <p id="m1">Inregistrare<br></p>
+                    <input type="username" class="input" placeholder="Nume de utilizator" name="username"/>
+                    <input type="password" class="input" placeholder="Parola" name="password"/>
+                    <input type="email" class="input" placeholder="Email" name="email" />
+                    <button type="submit" id="Register" >SignUp</button>
+                    <p class="m2">Ai deja cont? <a id="GoToLog" href="#">logheaza-te</a>.</p>
+                </form>
+            </div>
+            </div>
+    </header>
+    <script src="/Connect.js"></script>
+</body>
+</html>

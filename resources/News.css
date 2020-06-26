@@ -1,0 +1,151 @@
+
+
+.rcorners2 {
+    margin-left: 29vw;
+    margin-top: 17vh;
+    position: absolute;
+    text-align: center;
+    background:white;
+    border-radius: 25px;
+    padding: 50px;  
+    width: 33vw;
+    height:fit-content;
+    /* animation-duration: 1.5s; */
+    -webkit-animation: Coboara 2s;
+    /*opacity: 0.7;*/
+  }
+
+  @-webkit-keyframes Coboara {
+    from {
+        height:10vh;
+        margin-top:10vh;
+        opacity:0.8;
+    } 
+    to { 
+      height:25%;
+      margin-top:17vh;
+    }
+}
+
+  .rcorners2 img{
+    width: 25%;
+    margin-right: 1vw;
+  }
+
+.rcorners2 h1{
+    margin-top:2vh;
+    font-size: 2vw;
+}
+
+.rcorners2 h2{
+    font-size:2vw;
+    color:brown;
+   
+}
+
+.rcorners2 a{
+    text-decoration: none;
+}
+
+.rcorners2 a h2:hover{
+    color:red;
+}
+
+.rcorners2 a h2:active{
+    font-size:1.9vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .rcorners2 h1{
+        font-size:3vw;}
+    .rcorners2 h2{
+        font-size:4vw;
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+    .rcorners2 {
+        margin-top:2vh;
+    }
+}
+
+
+#field{
+    height:5px;
+    width:1250px;
+    margin-bottom:700px;
+}
+  #ball, #ball2 {
+    /* margin-top:40px; */
+    overflow:hidden;
+    margin-bottom:268px;
+    position: absolute;
+    left: 0;
+    width: 0.50em;
+    height: 0.50em;
+    border-radius: 0.5em;
+   
+  }
+  #ball { background: red; }
+  #ball2 { background: burlywood; }
+
+  
+
+  #ball3, #ball4 {
+    overflow:hidden;
+    /* margin-top:40px; */
+    margin-bottom:300px;
+    margin-left:100px;
+    position: absolute;
+    left: 0;
+    width: 0.50em;
+    height: 0.50em;
+    border-radius: 0.5em;
+  }
+  #ball3 { background: rgb(236, 14, 106); }
+  #ball4 { background: palevioletred; }
+
+
+  
+  #ball5, #ball6 {
+    overflow:hidden;
+      /* margin-top:40px; */
+      margin-bottom:320px;
+      margin-left:20px;
+    position: absolute;
+    left: 0;
+    width: 0.50em;
+    height: 0.50em;
+    border-radius: 0.5em;
+  }
+  #ball5 { background: brown; }
+  #ball6 { background: coral; }
+
+
+
+  #ball7, #ball8 {
+    overflow:hidden;
+    /* margin-top:40px; */
+    margin-bottom:280px;
+    margin-left:50px;
+    position: absolute;
+    left: 0;
+    width: 0.50em;
+    height: 0.50em;
+    border-radius: 0.5em;
+  }
+  #ball7 { background: darkorange; }
+  #ball8 { background: rgb(0, 175, 93); }
+
+  #SM{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+
+    background:#F4A460;
+    color:white;
+    width: 20%;
+    border-color:white;
+    font-size:14.5px;
+    cursor:pointer;
+    padding:10px;
+  }
