@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(gae_sc_italiana.jpg);
+    /* background-color: burlywood; */
+    background-blend-mode: darken; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.meniu
+{
+    min-height: 5vh;
+    min-width: 3vw;
+    display:grid;
+    flex-wrap: nowrap;
+    float:right;
+    max-height: max-content;
+
+}
+
+
+.bara-nav
+{
+    z-index:1;
+    flex-wrap: wrap;
+    position: fixed;
+    list-style: none;
+    width: 100%;
+    max-width: 100%;
+    min-height:min-content;
+    max-height: max-content;
+    background-color:white;
+}
+
+.bara-nav li
+{
+    flex: 1;
+    /* display: flex; */
+    flex-wrap: wrap;
+    position: relative;
+    display: inline-block;
+}
+
+.bara-nav li a
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 1vh 1vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.bara-nav li a:hover
+{
+    background-color:burlywood;
+    color:white;
+}
+
+.bara-nav li a:active
+{
+    border: 1px solid burlywood;
+    color: black;
+    background-color:white;
+
+}
+
+
+.bara-nav li ul     /*submeniurile!*/
+{
+    font-size: 1vw;
+    max-height: 3vh;
+    display: none;
+    flex-wrap: nowrap;
+    width: 1wh;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    list-style: none;
+}
+
+.bara-nav li:hover ul
+{
+    display: block;
+}
+
+
+.logo img
+{
+    height: 5vh;
+    float: left;
+    margin-left: 15px;
+}
+
+.centru
+{
+    -webkit-animation: Coboara 4s;
+    position: absolute;
+    height: auto;
+    margin-left: 30vw;
+    margin-top:39vh;
+}
+
+@-webkit-keyframes Coboara {
+    from {
+        margin-top:10vh;
+        opacity:0.8;
+    } 
+    to { 
+        margin-top:39vh;
+     
+    }
+}
+
+.centru li{
+    list-style: none;
+}
+
+.centru 
+{
+    width:40vw;
+    margin-right:37%;
+    height: auto;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.centru img
+{
+    display:none;
+    width: 10vw;
+    margin-left: 14.8vw;
+    margin-top: 2vw;
+    height: auto;
+    position:relative;
+}
+
+.cntr ul li img
+{
+    opacity:0;
+    display:block;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards; 
+}
+
+.cntr ul li:active img
+{
+    display:block;
+}
+
+.cntr ul li:active li
+{
+    display:block;
+}
+
+ #ravas{ 
+    margin-top:1vh;
+    font-size: 1.7vw;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .centru img
+    {
+        width:16vw;
+        margin-left:13vw; 
+    }
+        
+    .centru {
+        margin-top:25vh;
+        font-size:5vw;
+        margin-right:20%;
+        margin-left: 30%;
+    }
+
+    .centru #ravas{
+        font-size:2.9vw;
+    }
+  
+}
+
+@media only screen and (max-width: 370px) {
+    .centru img
+    {
+        margin-left:7vw;
+        width:26.5vw;
+    }
+
+    .centru {
+        margin-top:28vh;
+        font-size:7vw;
+    }
+
+    .centru #ravas{
+        font-size:5.2vw;
+    }
+  
+}
